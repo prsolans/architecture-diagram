@@ -1,0 +1,101 @@
+
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<title>DocuSign Solution Architecture</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+	<!-- Custom CSS -->
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<!-- Javascript functions-->
+	<script src="main.js"></script>
+	<!-- Boostrap import -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body class="p-2">
+  <img src="images/logo.png" style="float: left; width: 100px;"/>
+  <br/>
+	<h4>DocuSign Solution Architecture</h4>
+  <h5>Agreement Cloud Integrations</h5>
+
+	<!-- Grid container -->
+	<div class="container-fluid" style="clear: both;">
+		<div class="row">
+			<!-- Force fixed width on left column -->
+			<div class="col-width-350 pt-3">
+
+				<!-- Components table -->
+				<table class="table table-bordered bg-white">
+					<!-- Table heading -->
+					<thead>
+						<tr>
+							<th scope="row">Solution Components</th>
+							<td class="text-center pt-2">
+								<input id="masterToggle" class="toggle" onclick="toggleAll(this)" type="checkbox"/>
+							</td>
+						</tr>
+					</thead>
+
+					<!-- Table body -->
+					<tbody>
+						<tr>
+							<td class="prepare">Workflow</td>
+							<td class="text-center">
+								<input class="toggle" type="checkbox" value="workflow" onclick="toggle(this, value)" checked/>
+							</td>
+						</tr>
+						<tr>
+							<td class="prepare">Repository</td>
+							<td class="text-center">
+								<input class="toggle" type="checkbox" value="repository" onclick="toggle(this, value)" />
+							</td>
+
+						</tr>
+						<tr>
+							<td class="prepare">Insight</td>
+							<td class="text-center">
+								<input class="toggle" type="checkbox" value="insight" onclick="toggle(this, value)"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="applications">Applications</td>
+							<td class="text-center">
+								<input class="toggle" type="checkbox" value="applications" onclick="toggle(this, value)"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="enterprise">Enterprise Apps</td>
+							<td class="text-center">
+								<input class="toggle" type="checkbox" value="enterprise" onclick="toggle(this, value)"/>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+        <!-- <img src="images/Legend.png" style="height: 300px;"> -->
+
+				<!-- Style key -->
+				<!-- <img class="pl-5" src="img/StyleKey.png"> -->
+
+			</div>
+
+			<!-- Image overlay wrapper -->
+			<div class="col">
+				<div>
+					<img class="img-overlay" id="workflow" src="images/Workflow.png">
+					<img class="img-overlay hide" id="repository" src="images/Repository.png">
+					<img class="img-overlay hide" id="insight" src="images/Insight.png">
+          <img class="img-overlay hide" id="applications" src="images/Applications.png">
+					<img class="img-overlay hide" id="enterprise" src="images/Enterprise Apps.png">
+					<img class="img-overlay hide push-to-back" id="authentication" src="images/CLM Overview Diagram - Auth.png">
+							</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

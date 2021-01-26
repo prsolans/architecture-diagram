@@ -1,0 +1,89 @@
+/* Stack transparent images */
+.img-overlay{
+  position: absolute;
+  top: -120;
+  left: 40;
+  display: block;
+  width: 100%;
+}
+
+.img-overlay.push-to-back {
+  z-index: -1;
+}
+
+/* Set column to fixed width */
+.col-width-350 {
+  flex: 0 0 350px;
+}
+
+/* Reduce vertical padding in table */
+table td {
+  padding: .4rem .7rem .3rem .7rem !important;
+}
+
+/* Convenience class for hiding images */
+.hide {
+  visibility: hidden;
+}
+
+/* DAC colors */
+.prepare {
+  background-color: rgb(3, 105, 255);
+  color: white;
+}
+.applications {
+  background-image: linear-gradient(140deg, rgb(96, 195, 255) , white);
+}
+.enterprise {
+  background-image: linear-gradient(140deg, rgb(225, 225, 225) , white);
+}
+.manage {
+  background-image: linear-gradient(140deg, #ff13f4 , white);
+}
+.integrate {
+  background-image: linear-gradient(140deg, #d4d4d4 , white);
+}
+
+/* Convert checkbox to toggle switch */
+.toggle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #707070;
+  transition: background-color ease 0.15s;
+}
+.toggle:before {
+  content: "on off";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  font: 10px/18px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -24px;
+  word-spacing: 28px;
+  color: #fff;
+  white-space: nowrap;
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.15s;
+}
+.toggle:checked {
+  background-color:#1b49a0;
+}
+.toggle:checked:before {
+  left: 32px;
+}
